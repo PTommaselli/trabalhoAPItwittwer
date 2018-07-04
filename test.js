@@ -9,7 +9,7 @@ var t = new Twitter('',
 t.search('', function(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
-    console.log(body);
+    console.log(info);
   } else {
       console.log(error);
   }
@@ -18,7 +18,7 @@ t.search('', function(error, response, body) {
 t.listTweetsByUsername('', function(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
-    console.log(body);
+    console.log(info);
   } else {
       console.log(error);
   }
